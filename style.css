@@ -314,6 +314,41 @@ strong {
     50% { opacity: 1; }
 }
 
+/* --- SECTION DIVIDER QUOTES --- */
+.section-divider {
+    text-align: center;
+    padding: 40px 20px;
+    position: relative;
+}
+
+.section-divider::before {
+    content: '';
+    display: block;
+    width: 200px;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--border), transparent);
+    margin: 0 auto 20px;
+}
+
+.section-divider p {
+    font-family: var(--font-mono);
+    font-size: 1.15rem;
+    color: var(--text-secondary);
+    opacity: 0.6;
+    letter-spacing: 2px;
+    font-style: italic;
+    display: inline-block;
+    transition: opacity 0.3s;
+}
+
+.section-divider:hover p {
+    opacity: 0.7;
+}
+
+.section-divider.on-dark {
+    background: var(--bg-dark);
+}
+
 /* --- BUTTONS --- */
 .btn {
     display: inline-block;
