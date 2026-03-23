@@ -673,6 +673,23 @@ section {
 }
 
 /* --- TITANS --- */
+.titan-showcase {
+    margin-bottom: 32px;
+    border: 1px solid rgba(240, 192, 64, 0.2);
+    overflow: hidden;
+}
+
+.titan-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.titan-showcase:hover .titan-image {
+    transform: scale(1.02);
+}
+
 .titans-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
